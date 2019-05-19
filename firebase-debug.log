@@ -1,0 +1,268 @@
+[debug] [2019-04-23T11:52:43.211Z] ----------------------------------------------------------------------
+[debug] [2019-04-23T11:52:43.213Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ali Monapour\AppData\Local\Yarn\Data\global\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-04-23T11:52:43.214Z] CLI Version:   6.7.0
+[debug] [2019-04-23T11:52:43.214Z] Platform:      win32
+[debug] [2019-04-23T11:52:43.214Z] Node Version:  v10.11.0
+[debug] [2019-04-23T11:52:43.215Z] Time:          Tue Apr 23 2019 16:22:43 GMT+0430 (Iran Daylight Time)
+[debug] [2019-04-23T11:52:43.215Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-23T11:52:43.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-23T11:52:43.226Z] > authorizing via signed-in user
+[debug] [2019-04-23T11:52:43.226Z] [iam] checking project my-place-app-a030b for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-04-23T11:52:43.228Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b:testIamPermissions  
+
+[debug] [2019-04-23T11:52:44.796Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'my-place-app-a030b'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script.
+[debug] [2019-04-23T11:52:49.440Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "firebase-admin": "~7.0.0",
+    "cors": "^2.8.4",
+    "firebase-functions": "^2.2.0",
+    "uuid-v4": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-04-23T11:52:49.441Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T11:52:49.442Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T11:52:50.893Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T11:52:51.816Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2019-04-23T11:52:51.822Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b  
+ 
+[debug] [2019-04-23T11:52:53.141Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T11:52:53.142Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/361212107193:getServerAppConfig  
+ 
+[debug] [2019-04-23T11:52:53.998Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2019-04-23T11:52:54.007Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/my-place-app-a030b/configs  
+ 
+[debug] [2019-04-23T11:52:56.515Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (88.08 KB) for uploading
+[debug] [2019-04-23T11:52:57.051Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/my-place-app-a030b/locations/us-central1/functions:generateUploadUrl  
+ 
+[info] 
+
+There was an issue deploying your functions. Verify that your project has a Google App Engine instance setup at https://console.cloud.google.com/appengine and try again. If this issue persists, please contact support.
+[warn] !  functions: Upload Error: Server Error. getaddrinfo EAI_AGAIN cloudfunctions.googleapis.com cloudfunctions.googleapis.com:443
+[debug] [2019-04-23T11:52:59.088Z] Error: getaddrinfo EAI_AGAIN cloudfunctions.googleapis.com cloudfunctions.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN cloudfunctions.googleapis.com cloudfunctions.googleapis.com:443
+[debug] [2019-04-23T11:53:08.289Z] ----------------------------------------------------------------------
+[debug] [2019-04-23T11:53:08.291Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ali Monapour\AppData\Local\Yarn\Data\global\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-04-23T11:53:08.291Z] CLI Version:   6.7.0
+[debug] [2019-04-23T11:53:08.291Z] Platform:      win32
+[debug] [2019-04-23T11:53:08.291Z] Node Version:  v10.11.0
+[debug] [2019-04-23T11:53:08.292Z] Time:          Tue Apr 23 2019 16:23:08 GMT+0430 (Iran Daylight Time)
+[debug] [2019-04-23T11:53:08.292Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-23T11:53:08.301Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-23T11:53:08.302Z] > authorizing via signed-in user
+[debug] [2019-04-23T11:53:08.302Z] [iam] checking project my-place-app-a030b for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-04-23T11:53:08.304Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b:testIamPermissions  
+
+[debug] [2019-04-23T11:53:09.825Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'my-place-app-a030b'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script.
+[debug] [2019-04-23T11:53:14.424Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "firebase-admin": "~7.0.0",
+    "cors": "^2.8.4",
+    "firebase-functions": "^2.2.0",
+    "uuid-v4": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-04-23T11:53:14.426Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T11:53:14.426Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T11:53:16.488Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T11:53:16.766Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2019-04-23T11:53:16.771Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b  
+ 
+[debug] [2019-04-23T11:53:18.068Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T11:53:18.069Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/361212107193:getServerAppConfig  
+ 
+[debug] [2019-04-23T11:53:18.909Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2019-04-23T11:53:18.915Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/my-place-app-a030b/configs  
+ 
+[debug] [2019-04-23T11:53:19.784Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (88.08 KB) for uploading
+[debug] [2019-04-23T11:53:20.260Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/my-place-app-a030b/locations/us-central1/functions:generateUploadUrl  
+ 
+[info] 
+
+There was an issue deploying your functions. Verify that your project has a Google App Engine instance setup at https://console.cloud.google.com/appengine and try again. If this issue persists, please contact support.
+[warn] !  functions: Upload Error: Server Error. getaddrinfo EAI_AGAIN cloudfunctions.googleapis.com cloudfunctions.googleapis.com:443
+[debug] [2019-04-23T11:53:23.074Z] Error: getaddrinfo EAI_AGAIN cloudfunctions.googleapis.com cloudfunctions.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN cloudfunctions.googleapis.com cloudfunctions.googleapis.com:443
+[debug] [2019-04-23T11:54:11.873Z] ----------------------------------------------------------------------
+[debug] [2019-04-23T11:54:11.876Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ali Monapour\AppData\Local\Yarn\Data\global\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-04-23T11:54:11.876Z] CLI Version:   6.7.0
+[debug] [2019-04-23T11:54:11.876Z] Platform:      win32
+[debug] [2019-04-23T11:54:11.876Z] Node Version:  v10.11.0
+[debug] [2019-04-23T11:54:11.877Z] Time:          Tue Apr 23 2019 16:24:11 GMT+0430 (Iran Daylight Time)
+[debug] [2019-04-23T11:54:11.877Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-23T11:54:11.887Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-23T11:54:11.888Z] > authorizing via signed-in user
+[debug] [2019-04-23T11:54:11.888Z] [iam] checking project my-place-app-a030b for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-04-23T11:54:11.890Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b:testIamPermissions  
+
+[debug] [2019-04-23T11:54:13.420Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'my-place-app-a030b'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script.
+[debug] [2019-04-23T11:54:17.871Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "firebase-admin": "~7.0.0",
+    "cors": "^2.8.4",
+    "firebase-functions": "^2.2.0",
+    "uuid-v4": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-04-23T11:54:17.872Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T11:54:17.873Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T11:54:19.826Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2019-04-23T11:54:19.921Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T11:54:19.922Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b  
+ 
+[debug] [2019-04-23T11:54:21.248Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T11:54:21.250Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/361212107193:getServerAppConfig  
+ 
+[debug] [2019-04-23T11:54:23.523Z] Error: getaddrinfo EAI_AGAIN mobilesdk-pa.googleapis.com mobilesdk-pa.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN mobilesdk-pa.googleapis.com mobilesdk-pa.googleapis.com:443
+[debug] [2019-04-23T11:59:14.782Z] ----------------------------------------------------------------------
+[debug] [2019-04-23T11:59:14.785Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ali Monapour\AppData\Local\Yarn\Data\global\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-04-23T11:59:14.785Z] CLI Version:   6.7.0
+[debug] [2019-04-23T11:59:14.785Z] Platform:      win32
+[debug] [2019-04-23T11:59:14.785Z] Node Version:  v10.11.0
+[debug] [2019-04-23T11:59:14.786Z] Time:          Tue Apr 23 2019 16:29:14 GMT+0430 (Iran Daylight Time)
+[debug] [2019-04-23T11:59:14.786Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-04-23T11:59:14.796Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-04-23T11:59:14.796Z] > authorizing via signed-in user
+[debug] [2019-04-23T11:59:14.796Z] [iam] checking project my-place-app-a030b for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2019-04-23T11:59:14.799Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b:testIamPermissions  
+
+[debug] [2019-04-23T11:59:16.487Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'my-place-app-a030b'...
+[info] 
+[info] i  deploying functions
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script.
+[debug] [2019-04-23T12:00:54.010Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "firebase-admin": "~7.0.0",
+    "cors": "^2.8.4",
+    "firebase-functions": "^2.2.0",
+    "uuid-v4": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-04-23T12:00:54.012Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T12:00:54.012Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/my-place-app-a030b?view=CONSUMER_VIEW  
+ 
+[debug] [2019-04-23T12:00:56.304Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T12:00:56.681Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2019-04-23T12:00:56.687Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/my-place-app-a030b  
+ 
+[debug] [2019-04-23T12:00:58.014Z] <<< HTTP RESPONSE 200
+[debug] [2019-04-23T12:00:58.015Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/361212107193:getServerAppConfig  
+ 
+[debug] [2019-04-23T12:01:01.047Z] Error: getaddrinfo EAI_AGAIN mobilesdk-pa.googleapis.com mobilesdk-pa.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)
+[error] 
+[error] Error: Server Error. getaddrinfo EAI_AGAIN mobilesdk-pa.googleapis.com mobilesdk-pa.googleapis.com:443
